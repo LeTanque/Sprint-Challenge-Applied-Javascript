@@ -1,3 +1,11 @@
+// // Notes
+// div[data-school='Lambda']{
+//   /* CSS Style rules here */
+// }
+// const school = document.querySelector('.school');
+// const schoolName = school.dataset.school;
+
+
 class TabLink {
   constructor(tabElement){
     // assign this.tabElement to the tabElement DOM reference
@@ -6,7 +14,8 @@ class TabLink {
     // Get the `data-tab` value from this.tabElement and store it here
     // this.tabData = ; 
     
-    // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
+    // We need to find out if a user clicked 'all' cards or a specific category.  
+    // Follow the instructions below to accomplish this task:    
     /*
     // Check to see if this.tabData is equal to 'all'
     if(){
@@ -18,7 +27,8 @@ class TabLink {
     }
     /*
 
-     // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
+    // Map over the newly converted NodeList we just created in our if statement above. 
+    // Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
     // this.cards = Array.from(this.cards).map();
 
     // Add a click event that invokes this.selectTab
@@ -42,7 +52,8 @@ class TabLink {
     // Add a class of ".active-tab" to this.tabElement
     // this.tabElement;
   
-    // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
+    // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. 
+    // Just un-comment the code and study what is happening here.
     // this.cards.forEach(card => card.selectCard());
   }
 }
