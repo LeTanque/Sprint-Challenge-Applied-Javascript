@@ -5,31 +5,38 @@
 //  Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 //  If you have finished the above, play around with the styling on all the components, and understand how each is built.
 
+// class Carousel {
+// }
 
-class Carousel {
-    constructor(carousel) {
-        this.carousel = carousel;
-        console.log(this.carousel);
-        
-        
-        // console.log(images);
-        const carouselArr = Array.from(this.carousel).forEach( carouselItem => console.log(carouselItem) )
-        // .map(element => new TabCard(element));
-        // const images = this.carousel.forEach( image => console.log(image) );
-        console.log(carouselArr);
-        // this.images = carousel.querySelectorAll('img');
-        
-        
+let carousel = document.querySelector('.carousel');
 
+let leftButton = carousel.querySelector('.left-button');
+let rightButton = carousel.querySelector('.right-button');
+let carouselImages = carousel.querySelectorAll('img');
 
+let index = 0;
 
+carouselImages[index].style = 'display: block';
+
+leftButton.addEventListener('click', () => {
+    if (index === 0) {
+        index = carouselImages.length;
     }
-}
-let carousels = document.querySelectorAll('.carousel');
-carousels.forEach( carousel => new Carousel(carousel) );
+    carouselImages.forEach( img => {
+        img.style = 'display: none';
+    });
+    carouselImages[--index].style = 'display: block';
+});
 
-
-
+rightButton.addEventListener('click', () => {
+    if (index === carouselImages.length - 1) {
+        index = -1;
+    };
+    carouselImages.forEach( img => {
+        img.style = 'display: none';
+    });
+    carouselImages[++index].style = 'display: block';
+});
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
