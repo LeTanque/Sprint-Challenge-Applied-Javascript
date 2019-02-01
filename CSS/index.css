@@ -251,6 +251,12 @@ body {
   letter-spacing: 1px;
   font-weight: bold;
 }
+.cards-container .display-none {
+  display: none;
+}
+.cards-container .display-flex {
+  display: flex;
+}
 .carousel {
   width: 100%;
   display: flex;
