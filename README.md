@@ -39,7 +39,7 @@ DOM stands for document object model. It's an API for HTML that provides access 
 A DOM event is an object that allows javascript to react to what a user/website does. Browsers, most notably, track keyboard and mouse input. With DOM events, developers can attach event listeners to an event such as mouseenter and trigger a js response to the mouse moving into some part of the program.
 
 3. What is an event listener?
-An event listener is a function in JS (and I believe procedure in Java) that programmatically listens for DOM events, which then commonly triggers a response. 
+An event listener is a function in JS (and I believe procedure in Java) that programmatically listens for DOM events, which then commonly triggers a response. Event listeners are attached to DOM nodes.
 
 4. Why would we convert a NodeList into an Array?
 A NodeList is an 'array-like' object. While traversing through a NodeList is possible, manipulating it or using many of the powerful array methods available in JS is not. So we use Array.from to create a standard array from a NodeList.
