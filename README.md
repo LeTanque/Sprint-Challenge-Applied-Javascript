@@ -1,5 +1,7 @@
 # Sprint-Challenge Applied Javascript - Lambda Times
 
+## FRANK MARTINEZ BRANCH
+
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored the DOM and the concept of components. During this Sprint, you studied the DOM, DOM Events, and Components. In your challenge this week, you will demonstrate proficiency by creating an online Lambda newspaper called "Lambda Times."
 
 ## Instructions
@@ -31,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+DOM stands for document object model. It's an API for HTML that provides access to nearly everything in the HTML to any object orientated program. DOM is, in a lot of ways, how the browser parses and presents what you see.
 
 2. What is an event?
+A DOM event is an object that allows javascript to react to what a user/website does. Browsers, most notably, track keyboard and mouse input. With DOM events, developers can attach event listeners to an event such as mouseenter and trigger a js response to the mouse moving into some part of the program.
 
 3. What is an event listener?
+An event listener is a function in JS (and I believe procedure in Java) that programmatically listens for DOM events, which then commonly triggers a response. 
 
 4. Why would we convert a NodeList into an Array?
+A NodeList is an 'array-like' object. While traversing through a NodeList is possible, manipulating it or using many of the powerful array methods available in JS is not. So we use Array.from to create a standard array from a NodeList.
 
 5. What is a component?
+A component is an encapsulated function or set of functions designed to be reusable. Commonly used in Bootstrap, React, and I'm sure many other frameworks. 
+
 
 ### Git Set up
 
